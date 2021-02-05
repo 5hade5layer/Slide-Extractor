@@ -60,22 +60,16 @@ while i<count:
             diff_per=float(cv2.countNonZero(cv2.cvtColor(diff_frame, cv2.COLOR_BGR2GRAY))/n)
             frame_blank=float(cv2.countNonZero(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))/n)
             if diff_per>perc and frame_blank>0.40:
-                cv2.imshow('diff_frame',frame)
                 name=('slide' + "% d"+'.jpg') % sl_count
                 cv2.imwrite(name,frame)
                 sl_count=sl_count+1
                 old_frame = frame
         else:
             old_frame = frame
-
-        if cv2.waitKey(30) & 0xFF == ord('q'):
-            break
         f=0
     bar.update(i+1)
     i=i+1
 
 bar.finish()
-
 cap.release()
-cv2.destroyAllWindows()
 
