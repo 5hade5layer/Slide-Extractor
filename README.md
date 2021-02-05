@@ -6,7 +6,7 @@ Extracts slides from a video of a ppt presentation
 ```
 pip install -r requirements.txt
 ```
-3.run the program in the below format
+3. run the program in the below format
 ```
 python slides.py <videopath> -f <output folder name> 
 ```
