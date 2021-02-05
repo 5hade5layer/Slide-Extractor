@@ -14,7 +14,7 @@ python slides.py <videopath> -f <output folder name>
 ```
 python slides.py <videopath> -f <output folder name> -s <number of frames to be skipped>
 ```
-5. optionaly if you want to adjust the simalirity threshold at which a new slide is to be detected and saved (default is 0.15) you can use  
+5. optionaly if you want to adjust the simalirity threshold which is a float value ranging from 0-1 and higher the value is the code will only detect more dissimilar frames to adjust this value you can use
 ```
-python slides.py <videopath> -f <output folder name> -p <a float value between 0 and 1 lower the value similarity will be more close>
+python slides.py <videopath> -f <output folder name> -p <a float value b/w 0-1>
 ```
